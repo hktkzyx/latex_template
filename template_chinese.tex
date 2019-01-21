@@ -1,0 +1,37 @@
+% !TeX encoding = UTF-8
+% !BIB TS-program = biber
+\documentclass[UTF8]{ctexart}
+\usepackage{times}
+\usepackage[a4paper,left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage[labelsep=quad]{caption}
+\pagestyle{empty}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\hypersetup{pdfborder=000,pdfstartview=FitH}
+\usepackage{unicode-math}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{multicol}
+\setmathfont{Cambria Math}
+\usepackage[hyperref=true,backend=biber,style=gb7714-2015,sorting=none,backref=false,doi=false,isbn=false,url=false]{biblatex}
+\addbibresource[location=local]{Reference.bib}
+\title{标题}
+\author{单位\ 作者}
+\date{时间}
+\begin{document}
+	\newcommand*\diff{\mathrm{d}}
+	\newcommand*{\Rom}[1]{\uppercase\expandafter{\romannumeral#1}}
+	\newcommand{\Emph}[1]{\textbf{#1}}
+	\newcommand*{\secref}[1]{第\ref{#1}节}
+	\newcommand*{\degC}{$\mathrm{\deg C}$}
+	\renewcommand*\figureautorefname{图}
+	\renewcommand*\tableautorefname{表}
+	\renewcommand*{\equationautorefname}{方程}
+	\maketitle
+
+
+
+	\clearpage
+	\printbibliography[heading=bibintoc,title=参考文献]
+\end{document}

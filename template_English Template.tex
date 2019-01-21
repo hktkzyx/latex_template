@@ -1,0 +1,43 @@
+% !TeX TS-program = xelatex
+% !TeX encoding = UTF-8
+% !BIB TS-program = biber
+\documentclass[UTF8,a4paper]{article}
+\usepackage[a4paper,left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage[labelsep=quad]{caption}
+\pagestyle{empty}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\hypersetup{pdfborder=000,pdfstartview=FitH}
+\usepackage{unicode-math}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{multicol}
+\setmathfont{Cambria Math}
+\usepackage[hyperref=true,backend=biber,style=gb7714-2015,sorting=none,backref=false,doi=false,isbn=false,url=false]{biblatex}
+\addbibresource[location=local]{Reference.bib}
+%opening
+\title{}
+\author{}
+\begin{document}
+	\newcommand*\diff{\mathrm{d}}
+	\newcommand*{\Rom}[1]{\uppercase\expandafter{\romannumeral#1}}
+	\newcommand{\Emph}[1]{\textbf{#1}}
+	\newcommand*{\secref}[1]{Section \ref{#1}}
+	\newcommand*{\degC}{$\mathrm{\deg C}$}
+	\maketitle
+
+
+
+\begin{abstract}
+
+\end{abstract}
+
+
+
+\section{}
+
+	\clearpage
+	\printbibliography[heading=bibintoc,title=Reference]
+\end{document}
+
