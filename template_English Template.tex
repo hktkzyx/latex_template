@@ -2,7 +2,7 @@
 % !TeX encoding = UTF-8
 % !BIB TS-program = biber
 \RequirePackage{amsmath}
-\documentclass[a4paper]{article}
+\documentclass{article}
 %页面设置
 \usepackage[a4paper,left=1.25in,right=1.25in,top=1in,bottom=1in]{geometry}
 %\pagestyle{empty}
@@ -14,9 +14,8 @@
 \usepackage{subcaption}
 %超链接
 \usepackage{hyperref}
-\hypersetup{pdfborder=000,pdfstartview=FitH}
+\hypersetup{pdfborder=0 0 0,pdfstartview=FitH}
 %数学公式
-\usepackage{amsmath}
 \usepackage{mathtools}
 %字体设置
 \usepackage{fontspec}
@@ -27,7 +26,7 @@
 \setmathfont{Arial}[range=up/{num}]
 %参考文献
 \usepackage[hyperref=true,backend=biber,style=nature,sorting=none,backref=false,doi=false,isbn=false,url=false]{biblatex}
-\addbibresource[location=local]{Reference.bib}
+\addbibresource[location=local]{reference.bib}
 %opening
 \title{}
 \author{}
@@ -46,6 +45,6 @@
 \section{}
 
 	\clearpage
-	\printbibliography[heading=bibintoc,title=Reference]
+	\printbibliography[heading=bibintoc,title=References]
 \end{document}
 
