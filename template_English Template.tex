@@ -24,8 +24,8 @@
 \setmathfont{Cambria Math}
 \usepackage[per-mode=symbol,math-rm=\symup]{siunitx}
 %参考文献
-\usepackage[hyperref=true,backend=biber,style=nature,sorting=none,backref=false,doi=false,isbn=false,url=false]{biblatex}
-\addbibresource[location=local]{reference.bib}
+\usepackage[hyperref=true,backend=biber,style=nature,date=year,sorting=none,backref=false,doi=false,isbn=false,url=false]{biblatex}
+\addbibresource[location=local]{references.bib}
 %opening
 \title{}
 \author{}
@@ -33,7 +33,6 @@
 	\newcommand*\diff{\mathrm{d}}
 	\newcommand*{\Rom}[1]{\uppercase\expandafter{\romannumeral#1}}
 	\newcommand{\Emph}[1]{\textbf{#1}}
-	\newcommand*{\secref}[1]{Section \ref{#1}}
 	\maketitle
 \begin{abstract}
 
